@@ -273,6 +273,61 @@ scene.add(frontWall);
   scene.add(w);
 });
 
+// ─── Archival Details ─────────────────────────────────────────────────────────
+
+// Section dividers with brass plaques
+const sectionLabels = [
+  { z: -1.1, label: "HISTORIES & ARCHIVES" },
+  { z: -3.3, label: "IMAGES & ARTIFACTS" },
+  { z: -5.5, label: "SIMULATIONS" }
+];
+
+sectionLabels.forEach(({ z }) => {
+  // Arch-like divider beam
+  const divider = new THREE.Mesh(new THREE.BoxGeometry(12, 0.15, 0.4), shelfEdgeMat);
+  divider.position.set(0, 3.6, z);
+  scene.add(divider);
+
+  // Brass plaque
+  const plaque = new THREE.Mesh(new THREE.BoxGeometry(2.5, 0.4, 0.08), mkStd(0x8b7355, 0.6, 0.3));
+  plaque.position.set(0, 3.2, z);
+  scene.add(plaque);
+});
+
+// Railing posts along the sides (like a reading room barrier)
+const railMat = mkStd(0x1a1410, 0.75, 0.1);
+for (let i = 0; i < NUM_UNITS; i++) {
+  const z = -(i * UNIT_W) - UNIT_W * 0.5;
+  [-7.5, 7.5].forEach((x) => {
+    const post = new THREE.Mesh(new THREE.BoxGeometry(0.08, 1.2, 0.08), railMat);
+    post.position.set(x, 0.6, z);
+    scene.add(post);
+  });
+}
+
+// Floor trim/border at edges
+const floorTrim = mkStd(0x050403, 0.98);
+for (let i = 0; i < NUM_UNITS; i++) {
+  const z = -(i * UNIT_W) - UNIT_W * 0.5;
+  [-8, 8].forEach((x) => {
+    const trim = new THREE.Mesh(new THREE.BoxGeometry(0.12, 0.02, UNIT_W), floorTrim);
+    trim.position.set(x, 0.01, z);
+    scene.add(trim);
+  });
+}
+
+// Case details on walls - decorative metal inlays
+const caselineColor = mkStd(0x3a2a1a, 0.7, 0.2);
+[-6, 6].forEach((x) => {
+  for (let i = 0; i < NUM_UNITS * 2; i++) {
+    const z = -(i * UNIT_W / 2) - UNIT_W * 0.5;
+    const line = new THREE.Mesh(new THREE.BoxGeometry(0.06, 0.08, 0.02), caselineColor);
+    line.position.set(x, 2.2 + (i % 2) * 0.5, z);
+    line.rotation.z = x < 0 ? 0 : Math.PI;
+    scene.add(line);
+  }
+});
+
 // ─── Shelf unit builder ───────────────────────────────────────────────────────
 
 const artifactMeshes: THREE.Mesh[] = [];
