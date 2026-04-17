@@ -14,134 +14,170 @@ interface Artifact {
 }
 
 const ARTIFACTS: Artifact[] = [
+  // ─── Histories & Archives (First section) ────────────────────────────────
   {
-    catalogueNumber: "ARC-1901-001",
-    reading: "History, Theories & Archives",
-    title: "Portrait of an Unknown Woman",
-    summary: "A rare studio portrait preserved as an archival print, capturing the mood of a forgotten subject.",
-    date: "c. 1901",
+    catalogueNumber: "ARC-HTA-001",
+    reading: "Histories & Archives",
+    title: "Theory's Curriculum",
+    summary: "Architectural theory as a curated archive shaped by institutional priorities and frameworks.",
+    date: "Bedford Press",
     description:
-      "Albumen silver print mounted on cardboard. The subject is seated beside a draped table, her gaze directed slightly off-camera. Studio markings on the reverse suggest a European metropolitan studio, though the exact location remains unconfirmed.",
-    color: 0x5a3e2b,
-  },
-  {
-    catalogueNumber: "ARC-1847-002",
-    reading: "History, Theories & Archives",
-    title: "Survey Map of the Northern Territories",
-    summary: "A survey map recording contested borders and exploratory routes through remote terrain.",
-    date: "1847",
-    description:
-      "Hand-drawn survey map in ink and watercolour on linen. Several place names have been crossed out and replaced, suggesting multiple expeditions revised the original survey. Some marked locations have no corresponding geographic record.",
-    color: 0x2b3e2a,
-  },
-  {
-    catalogueNumber: "ARC-1923-003",
-    reading: "History, Theories & Archives",
-    title: "Cipher Letter, Author Unknown",
-    summary: "A coded dispatch that hints at a hidden correspondence and a lost rendezvous.",
-    date: "March 14, 1923",
-    description:
-      "A single-page letter written in a substitution cipher that remains partially decoded. The visible decoded sections refer to a meeting, a transfer of materials, and a location identified only by coordinates. The paper bears traces of sealing wax.",
-    color: 0x3e2a2a,
-  },
-  {
-    catalogueNumber: "ARC-1888-004",
-    reading: "History, Theories & Archives",
-    title: "Brass Astronomical Instrument",
-    summary: "An enigmatic brass device that connects early scientific craft with ritual geometry.",
-    date: "c. 1888",
-    description:
-      "A hand-crafted brass instrument of uncertain purpose, featuring calibrated dials, an adjustable arm, and engraved symbols along the base. May be a custom navigational variant of an astrolabe. Maker's mark partially legible.",
-    color: 0x3a3520,
-  },
-  {
-    catalogueNumber: "ARC-1935-005",
-    reading: "Images & Artifacts",
-    title: "Field Notes — Expedition Karavan",
-    summary: "A compact journal chronicling landscape observation and collector fieldwork.",
-    date: "1935",
-    description:
-      "A handwritten field journal of 48 pages detailing observations from an unspecified expedition. Entries are dated but lack year references. The final entry breaks off mid-sentence. Includes pencil sketches of geological formations.",
-    color: 0x2a3040,
-  },
-  {
-    catalogueNumber: "ARC-1910-006",
-    reading: "Images & Artifacts",
-    title: "Glass Plate Negative — Village Square",
-    summary: "A preserved winter street scene captured on fragile glass plate film.",
-    date: "c. 1910",
-    description:
-      "Dry-plate glass negative depicting a village square in winter. Figures are blurred by motion, suggesting a long exposure. A banner strung between buildings carries text in a language as yet unidentified.",
-    color: 0x20303a,
-  },
-  {
-    catalogueNumber: "ARC-1799-007",
-    reading: "Images & Artifacts",
-    title: "Treaty Fragment",
-    summary: "A torn vellum fragment preserving a moment of diplomatic tension.",
-    date: "1799",
-    description:
-      "A fragment of what appears to be a formal treaty written on vellum. Three signatures are visible, though only one is legible. The document has been deliberately torn, removing approximately one-third of the original text.",
+      "This text reflects on how architectural theory is structured, taught, and circulated. It suggests that theory itself is curated like an archive, shaped by institutional priorities and frameworks. What is included or excluded defines how architecture is understood.",
     color: 0x3a2a1a,
   },
   {
-    catalogueNumber: "ARC-1955-008",
-    reading: "Images & Artifacts",
-    title: "Ceramic Vessel with Markings",
-    summary: "A sealed vessel that hints at hidden contents and undeciphered symbols.",
-    date: "origin unknown, acquired 1955",
+    catalogueNumber: "ARC-HTA-002",
+    reading: "Histories & Archives",
+    title: "The Power of the Archive and Its Limits",
+    summary: "Archives as systems of power that determine what is remembered and constructed as history.",
+    date: "Achille Mbembe",
     description:
-      "A small terracotta vessel with a sealed lid, decorated with incised geometric markings. X-ray imaging suggests the vessel is not empty, but it has not been opened due to preservation concerns. The markings do not correspond to any known script.",
-    color: 0x3a2f20,
-  },
-  {
-    catalogueNumber: "ARC-1862-009",
-    reading: "Simulations",
-    title: "Coastal Survey — Southern Shore",
-    summary: "A charted shoreline simulation mapping hidden shoals and anchorage hazards.",
-    date: "1862",
-    description:
-      "Engraved map with hand-applied colour showing a coastline with depth soundings and anchorage markers. Several offshore features are marked with a symbol that does not appear in the map's own legend.",
-    color: 0x1e2e38,
-  },
-  {
-    catalogueNumber: "ARC-1940-010",
-    reading: "Simulations",
-    title: "Correspondence — Series VII",
-    summary: "A wartime letter bundle simulating the quiet urgency of personal dispatch.",
-    date: "1940–1941",
-    description:
-      "A bundle of 23 letters addressed to M. The letters describe wartime conditions, a separation, and repeated references to the package. No return address. Three letters show signs of having been opened and re-sealed.",
-    color: 0x2e2020,
-  },
-  {
-    catalogueNumber: "ARC-1897-011",
-    reading: "Simulations",
-    title: "Stereoscopic Pair — Interior Scene",
-    summary: "A stereo photograph that recreates a layered interior archive environment.",
-    date: "1897",
-    description:
-      "A stereoscopic photograph pair showing a room filled with shelves of specimens and instruments. A figure stands partially obscured by shadow in the far corner. The room has not been identified. Printed on the mount: Series 7, No. 44.",
+      "Mbembe argues that archives are not neutral collections but systems of power that determine what is remembered. The archive transforms documents into authoritative records through processes of selection, classification, and control. It creates a constructed version of history rather than an objective one.",
     color: 0x2a2a3a,
   },
   {
-    catalogueNumber: "ARC-1915-012",
-    reading: "Simulations",
-    title: "Technical Drawing — Unidentified Device",
-    summary: "A mechanical schematic that simulates the precision of an unknown invention.",
-    date: "c. 1915",
+    catalogueNumber: "ARC-HTA-003",
+    reading: "Histories & Archives",
+    title: "Liquid the Present of Architecture Theory",
+    summary: "Architectural theory as unstable and constantly shifting with rapid cultural and technological changes.",
+    date: "Santoyo-Orozco",
     description:
-      "A detailed technical drawing in graphite showing three views of an unidentified mechanical device. Annotations include measurements and material specifications. No accompanying documentation explains its intended function.",
-    color: 0x28302a,
+      "This text suggests that architectural theory is no longer stable but constantly shifting and 'liquid.' Contemporary discourse is shaped by rapid cultural, technological, and environmental changes. As a result, theory becomes less fixed and more adaptive over time.",
+    color: 0x1e2e38,
+  },
+  {
+    catalogueNumber: "ARC-HTA-004",
+    reading: "Histories & Archives",
+    title: "Archives of the Present-Future",
+    summary: "New forms of archives needed to capture uncertain, ongoing environmental futures.",
+    date: "Emily Eliza Scott",
+    description:
+      "Scott explores how climate change disrupts traditional ways of representing and archiving the world. Because it operates across massive scales, it resists clear visualization and documentation. New forms of 'archives' are needed to capture uncertain, ongoing environmental futures.",
+    color: 0x3a3520,
   },
 
+  // ─── Images & Artifacts (Middle section) ─────────────────────────────────
+  {
+    catalogueNumber: "ARC-IMG-001",
+    reading: "Images & Artifacts",
+    title: "Not Interesting: On the Limits of Criticism in Architecture",
+    summary: "Architectural criticism beyond subjective 'interest' toward broader, deeper engagement.",
+    date: "Andrew Atwood",
+    description:
+      "This text argues that architectural criticism often relies too heavily on what is considered 'interesting,' which limits deeper engagement with architecture. Atwood suggests that 'interest' is subjective and tied to attention, making it a weak foundation for critique. Instead, he pushes for a broader, less biased way of engaging architecture beyond immediate visual or cultural appeal.",
+    color: 0x5a3e2b,
+  },
+  {
+    catalogueNumber: "ARC-IMG-002",
+    reading: "Images & Artifacts",
+    title: "Some Notes on Making Images with Computers",
+    summary: "Digital tools reshape architectural images from representation to active design instruments.",
+    date: "Zeina Koreitem",
+    description:
+      "Koreitem explores how digital tools reshape the production of architectural images, shifting them from representation to active design tools. Images are no longer neutral outputs but are constructed through computational processes and decisions. This reframes images as artifacts that shape architectural thinking rather than simply depicting it.",
+    color: 0x2b3e2a,
+  },
+  {
+    catalogueNumber: "ARC-IMG-003",
+    reading: "Images & Artifacts",
+    title: "Log 56: CataLog (Chunk Models & Spectral Montages)",
+    summary: "Experimental modeling techniques reshaping architecture through aggregation and data.",
+    date: "Log Magazine",
+    description:
+      "This issue presents experimental modeling techniques like chunk models and photogrammetry as new ways of constructing architecture. These methods prioritize aggregation, data, and hybridization over traditional representation. Architecture becomes a simulated field of relationships rather than a fixed object.",
+    color: 0x3e2a2a,
+  },
+  {
+    catalogueNumber: "ARC-IMG-004",
+    reading: "Images & Artifacts",
+    title: "Seamless: Digital Collage and Dirty Realism in Architecture",
+    summary: "Photography and digital collage as active constructors of architectural reality.",
+    date: "Jesús Vassallo",
+    description:
+      "Vassallo examines how photography and digital collage have transformed architecture's relationship to reality. Images no longer document buildings but actively construct new forms of realism through editing and recombination. This creates a 'dirty realism' where truth is layered, mediated, and inseparable from image production.",
+    color: 0x2a3040,
+  },
+  {
+    catalogueNumber: "ARC-IMG-005",
+    reading: "Images & Artifacts",
+    title: "Fluctuations of Attention",
+    summary: "How visual fragmentation reshapes architecture toward image-driven aesthetics.",
+    date: "Michael Young",
+    description:
+      "Young discusses how contemporary visual culture fragments attention through constant exposure to images. Architecture is increasingly shaped by how it is viewed, circulated, and consumed visually rather than physically experienced. This shifts design toward image-driven aesthetics and away from stable meaning.",
+    color: 0x20303a,
+  },
+
+  // ─── Simulations (Far section) ────────────────────────────────────────────
+  {
+    catalogueNumber: "ARC-SIM-001",
+    reading: "Simulations",
+    title: "Ecological World-Building",
+    summary: "Virtual environments as tools for modeling ecological futures and environmental scenarios.",
+    date: "Alice Bucknell",
+    description:
+      "Bucknell explores how virtual environments and science fiction can model ecological futures. These simulations allow designers to test environmental scenarios and imagine alternative worlds. World-building becomes a tool for understanding complex planetary systems and climate realities.",
+    color: 0x1e2e38,
+  },
+  {
+    catalogueNumber: "ARC-SIM-002",
+    reading: "Simulations",
+    title: "A Portal to Infinity",
+    summary: "Simulations as open-ended systems that evolve without fixed outcomes or narratives.",
+    date: "Ian Cheng (Interview)",
+    description:
+      "Cheng describes simulations as open-ended systems that evolve without fixed outcomes. His work focuses on creating worlds that generate their own narratives through interaction and time. This challenges traditional storytelling by emphasizing unpredictability and continuous change.",
+    color: 0x2e2020,
+  },
+  {
+    catalogueNumber: "ARC-SIM-003",
+    reading: "Simulations",
+    title: "Emissaries / A Trilogy of Simulations",
+    summary: "Self-running simulated worlds with autonomous agents producing emergent behaviors.",
+    date: "Ian Cheng",
+    description:
+      "This project presents self-running simulated worlds populated by autonomous agents. These environments operate without a fixed script, producing emergent behaviors and narratives. Architecture becomes a dynamic system rather than a static form.",
+    color: 0x2a2a3a,
+  },
+  {
+    catalogueNumber: "ARC-SIM-004",
+    reading: "Simulations",
+    title: "Simulating the In-Common",
+    summary: "Simulation as a tool for modeling collective planetary conditions and shared futures.",
+    date: "Marcelyn Gow",
+    description:
+      "Gow argues that simulation can model collective planetary conditions and shared futures. By using game environments and digital worlds, architects can visualize and engage with environmental and social systems. Simulation becomes a tool for knowledge production and collective understanding.",
+    color: 0x28302a,
+  },
+  {
+    catalogueNumber: "ARC-SIM-005",
+    reading: "Simulations",
+    title: "Screen Space, Real Time: Simulation as an Emergent Format",
+    summary: "Real-time simulation as a new form of architectural representation and interaction.",
+    date: "Damjan Jovanovic",
+    description:
+      "Jovanovic presents real-time simulation as a new form of architectural representation. Unlike static drawings, simulations allow for interaction, multiple scales, and continuous change within one model. This shifts architecture toward immersive, playable environments.",
+    color: 0x3a2a1a,
+  },
+  {
+    catalogueNumber: "ARC-SIM-006",
+    reading: "Simulations",
+    title: "Worldmaking & Simulation",
+    summary: "Simulation as worldmaking practice where designers create entire systems over time.",
+    date: "Damjan Jovanovic (Interview)",
+    description:
+      "This interview frames simulation as a practice of 'worldmaking,' where designers create entire systems rather than individual objects. It emphasizes the role of games and digital platforms in shaping new architectural approaches. Architecture expands into designing experiences and environments over time.",
+    color: 0x3a3520,
+  },
 ];
 
 // ─── Artifact categories ──────────────────────────────────────────────────────
 
+// ─── Artifact categories ──────────────────────────────────────────────────────
+
 const HISTORY_ARTIFACTS = ARTIFACTS.slice(0, 4);
-const IMAGES_ARTIFACTS = ARTIFACTS.slice(4, 8);
-const SIMULATIONS_ARTIFACTS = ARTIFACTS.slice(8, 12);
+const IMAGES_ARTIFACTS = ARTIFACTS.slice(4, 9);
+const SIMULATIONS_ARTIFACTS = ARTIFACTS.slice(9, 15);
 
 // ─── Renderer ────────────────────────────────────────────────────────────────
 
