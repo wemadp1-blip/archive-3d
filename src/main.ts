@@ -432,21 +432,7 @@ lightZPositions.forEach((z) => {
   light.position.set(0, 3.3, z);
   scene.add(light);
 
-  // Bulb mesh
-  const bulb = new THREE.Mesh(
-    new THREE.SphereGeometry(0.07, 8, 8),
-    new THREE.MeshStandardMaterial({ color: 0xfff0a0, emissive: 0xfff0a0, emissiveIntensity: 6 })
-  );
-  bulb.position.copy(light.position);
-  scene.add(bulb);
-
-  // Cord
-  const cord = new THREE.Mesh(
-    new THREE.CylinderGeometry(0.004, 0.004, 0.65, 4),
-    new THREE.MeshStandardMaterial({ color: 0x201a10 })
-  );
-  cord.position.set(0, 3.62, z);
-  scene.add(cord);
+  // Bulb visuals removed for cleaner aesthetic
 
   // Wide fill lights aimed at the shelves on each side
   const fillL = new THREE.PointLight(0xb05e18, 2.0, 4.5, 1.8);
@@ -542,7 +528,7 @@ const velocity  = new THREE.Vector3();
 const direction = new THREE.Vector3();
 const clock     = new THREE.Clock();
 
-const BOUND_X     =  AISLE_W / 2 - 0.25;
+const BOUND_X     =  AISLE_W / 2 - 0.4;
 const BOUND_Z_MAX =  2.2;
 const BOUND_Z_MIN = -(CORRIDOR_L + 1.8);
 
