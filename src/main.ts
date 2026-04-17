@@ -320,15 +320,15 @@ function buildShelfUnit(x: number, z: number, flipFacing: boolean, category: Art
 }
 
 function placeItems(group: THREE.Group, shelfY: number, maxH: number, category: Artifact[]) {
-const count = 3 + Math.floor(Math.random() * 3);
+const count = 6 + Math.floor(Math.random() * 4);
   let curX = -UNIT_W / 2 + 0.06;
 
   for (let i = 0; i < count; i++) {
     if (curX > UNIT_W / 2 - 0.1) break;
 
     const artifact = category[Math.floor(Math.random() * category.length)];
-    const isBox   = Math.random() < 0.18;
-    const w = isBox ? 0.13 + Math.random() * 0.07 : 0.04 + Math.random() * 0.07;
+    const isBox   = Math.random() < 0.15;
+    const w = isBox ? 0.1 + Math.random() * 0.05 : 0.03 + Math.random() * 0.04;
     const h = Math.min(maxH * 0.55 + Math.random() * maxH * 0.38, maxH - 0.04);
     const d = SHELF_D * (isBox ? 0.68 : 0.5) + Math.random() * 0.06;
 
@@ -348,7 +348,7 @@ const count = 3 + Math.floor(Math.random() * 3);
     artifactMap.set(mesh, artifact);
     originalColors.set(mesh, mat.color.clone());
 
-    curX += w + 0.01 + Math.random() * 0.035;
+    curX += w + 0.005 + Math.random() * 0.015;
   }
 }
 
