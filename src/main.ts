@@ -415,7 +415,7 @@ for (let i = 0; i < NUM_UNITS; i++) {
   if (i < 2) category = HISTORY_ARTIFACTS;
   else if (i < 4) category = IMAGES_ARTIFACTS;
   else category = SIMULATIONS_ARTIFACTS;
-  buildShelfUnit(-sideX, z, true, category);
+  buildShelfUnit(-sideX, z, false, category);
   buildShelfUnit( sideX, z, false, category);
 }
 
